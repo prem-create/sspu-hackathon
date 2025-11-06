@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sspu_hackathon/desktop_pages/room_details_page.dart';
+import 'package:sspu_hackathon/desktop_pages/timetable_view.dart';
 import 'package:sspu_hackathon/utils/my_box.dart';
 import 'package:sspu_hackathon/utils/my_drop_down_button.dart';
 import 'package:sspu_hackathon/utils/my_elevated_button.dart';
@@ -30,9 +30,9 @@ class RoomDetails extends StatelessWidget {
             Container(
               height: 200,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(5),
+                borderRadius: BorderRadius.circular(10),
                 image: DecorationImage(
-                  image: AssetImage('assets/Image/facultyPage.png'),
+                  image: AssetImage('assets/Image/roomPage.png'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -175,7 +175,7 @@ class RoomDetails extends StatelessWidget {
               text: 'Generate Timetable',
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => RoomDetailsPage()),
+                MaterialPageRoute(builder: (context) => TimetableView()),
               ),
             ),
           ],

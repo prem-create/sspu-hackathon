@@ -20,7 +20,7 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
 
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.transparent,
       child:ListView(
         children: [
           ListTile(
@@ -32,6 +32,11 @@ class MyDrawer extends StatelessWidget {
             leading: Icon(Icons.admin_panel_settings_outlined),
             title: drawerText('Timetable View') ,
             onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(Icons.home),
+            title: drawerText('Home') ,
+            onTap: () => context.go('/desktopHomePage'),
           )
         ],
       )

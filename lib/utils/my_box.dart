@@ -18,7 +18,7 @@ class MyBox extends StatelessWidget {
         width: width, //width of box
         margin: EdgeInsets.only(right: 16), // spacing between cards
         decoration: BoxDecoration(
-          color: Color(0xFFFFFFFF),
+          color: Colors.transparent,
           borderRadius: BorderRadius.circular(10),
           border: BoxBorder.all(color: Color(0xDEE1E6FF)),
         ),

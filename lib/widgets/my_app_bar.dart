@@ -10,7 +10,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.transparent,
       title: Text('AI Scheduler'),
       actions: [
         IconButton(onPressed: () {}, icon: Icon(Icons.search)),
