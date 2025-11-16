@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:sspu_hackathon/widgets/my_app_bar.dart';
 import 'package:sspu_hackathon/widgets/my_drawer.dart';
 import 'package:sspu_hackathon/widgets/waving_background.dart';
@@ -13,7 +14,9 @@ class TimetableView extends StatelessWidget {
       body: WavingGradientBackground(
         child: Row(children: [
           MyDrawer(),
-          Text('work under progress')
+          Expanded(
+            child: Lottie.asset('assets/animations/FemaleEmployeeWorkingonDataSecurity.json'),
+          )
         ],),
       ),
     );
