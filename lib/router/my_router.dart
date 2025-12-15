@@ -24,7 +24,7 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       path: '/timetableView',
       name: 'timetableView',
-      builder: (context, state) =>  TimetableView(),
+      builder: (context, state) =>  ScheduleTablePage(),
     ),
     
     

@@ -175,7 +175,7 @@ class RoomDetails extends StatelessWidget {
               text: 'Generate Timetable',
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => TimetableView()),
+                MaterialPageRoute(builder: (context) => ScheduleTablePage()),
               ),
             ),
           ],
